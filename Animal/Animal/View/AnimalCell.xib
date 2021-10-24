@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="AnimalCell" customModule="Animal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXY-qC-Syh">
+                        <rect key="frame" x="20" y="25" width="129" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="03a-RI-VNP"/>
+                            <constraint firstAttribute="height" constant="75" id="sig-Rd-aw5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egf-4n-zls">
+                        <rect key="frame" x="214" y="52.5" width="104" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="egf-4n-zls" firstAttribute="leading" secondItem="JXY-qC-Syh" secondAttribute="trailing" constant="65" id="Fqg-GB-uYl"/>
+                    <constraint firstItem="JXY-qC-Syh" firstAttribute="centerY" secondItem="egf-4n-zls" secondAttribute="centerY" id="Pa3-kh-Phd"/>
+                    <constraint firstItem="JXY-qC-Syh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VAV-N0-aT8"/>
+                    <constraint firstItem="JXY-qC-Syh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="VXQ-jj-iGD"/>
+                    <constraint firstItem="JXY-qC-Syh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yom-pV-Wws"/>
+                    <constraint firstAttribute="bottom" secondItem="JXY-qC-Syh" secondAttribute="bottom" constant="25" id="mKT-1D-PJv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="animalImage" destination="JXY-qC-Syh" id="iP0-BD-HWZ"/>
+                <outlet property="animalName" destination="egf-4n-zls" id="ENL-kg-GvM"/>
+            </connections>
+            <point key="canvasLocation" x="302.89855072463769" y="-30.46875"/>
+        </tableViewCell>
+    </objects>
+</document>
