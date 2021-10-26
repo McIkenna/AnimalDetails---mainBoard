@@ -7,40 +7,56 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var usernameField : UITextField!
     @IBOutlet weak var ageField : UITextField!
     @IBOutlet weak var errorLabel : UILabel!
     @IBOutlet weak var button : UIButton!
-    var newId : Int = 0
     var dataBase: DatabaseService = DatabaseService()
     //var userInfo : [PersonInfo] = []
+    @IBOutlet weak var userTable : UITableView!
+    
+    var user : [PersonInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        errorLabel.text = ""
-        sendToDatabase()
+        userTable.register(UITableViewCell.self, forCellReuseIdentifier: "myTableCell")
+        userTable.dataSource = self
+    
+        user = dataBase.read()
     }
 
     
     @IBAction func sendToDatabase(){
-        newId = newId + 1
-        let assignedId = newId
+        let assignedId = user.count + 1
         let username : String? = usernameField.text!
         let age : Int?  = Int(ageField.text!)
        
-        if(username! != ""){
+        if(username != "" || age != 0){
         dataBase.insert(id: assignedId, username: username!, age: age ?? 0)
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let tableList = storyboard.instantiateViewController(withIdentifier: "TableNC")
-                tableList.modalPresentationStyle = .fullScreen
-                present(tableList, animated: true, completion: nil)
-                
+            errorLabel.text = ""
+            usernameField.text = " "
+            ageField.text = " "
+            errorLabel.text = "Entry was successful"
+            errorLabel.textColor = .green
         }
-       
+        else{
+            errorLabel.text = "Invalid User data"
+            
+        }
     }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return user.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "myTableCell")!
+        
+        cell.textLabel?.text = "\(user[indexPath.row].id) : " + user[indexPath.row].username + " " + String(user[indexPath.row].age)
+        return cell
+    }
 }
 

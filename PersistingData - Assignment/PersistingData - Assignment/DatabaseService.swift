@@ -13,7 +13,7 @@ class DatabaseService {
         createTable()
     }
     
-    let dbPath : String = "userInfo.sqlite"
+    let dbPath : String = "user.sqlite"
     var db:OpaquePointer? //Opaque pointer are used to represent C pointers
     
     func openDatabase() -> OpaquePointer? {
@@ -34,7 +34,7 @@ class DatabaseService {
     
     //creating a table
     func createTable(){
-        let createTableQuery = "CREATE TABLE IF NOT EXISTS user (Id INTEGER PRIMARY KEY, username TEXT, age INTEGER);"
+        let createTableQuery = "CREATE TABLE IF NOT EXISTS userProfile (Id INTEGER PRIMARY KEY, username TEXT, age INTEGER);"
         
         var createTableStatement : OpaquePointer? = nil
         if sqlite3_prepare_v2(db, createTableQuery, -1, &createTableStatement, nil) == SQLITE_OK {
@@ -53,7 +53,7 @@ class DatabaseService {
     
 //Inserting a data to the table
     func insert(id: Int, username: String, age: Int){
-        let insertQuery = "INSERT INTO user (Id, username, age) VALUES (?, ?, ?);"
+        let insertQuery = "INSERT INTO userProfile (Id, username, age) VALUES (?, ?, ?);"
         var insertStatement : OpaquePointer? = nil
         
         if sqlite3_prepare_v2(db, insertQuery, -1, &insertStatement, nil) == SQLITE_OK {
@@ -75,7 +75,7 @@ class DatabaseService {
     //Read table function
     
     func read() -> [PersonInfo]{
-        let queryStatementString = "SELECT * FROM user"
+        let queryStatementString = "SELECT * FROM userProfile"
         var queryStatement : OpaquePointer? = nil
         var userInfo : [PersonInfo] = []
         

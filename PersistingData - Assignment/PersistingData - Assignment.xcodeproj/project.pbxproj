@@ -15,7 +15,6 @@
 		BDE30FB32727A8610024C4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FB12727A8610024C4B9 /* LaunchScreen.storyboard */; };
 		BDE30FBB2727A8D60024C4B9 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */; };
 		BDE30FBD2727A9120024C4B9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */; };
-		BDE30FC12727AFFD0024C4B9 /* ListOfUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FC02727AFFD0024C4B9 /* ListOfUserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		BDE30FB42727A8610024C4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
-		BDE30FC02727AFFD0024C4B9 /* ListOfUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 				BDE30FB42727A8610024C4B9 /* Info.plist */,
 				BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */,
 				BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */,
-				BDE30FC02727AFFD0024C4B9 /* ListOfUserController.swift */,
 			);
 			path = "PersistingData - Assignment";
 			sourceTree = "<group>";
@@ -150,7 +147,6 @@
 				BDE30FAB2727A85F0024C4B9 /* ViewController.swift in Sources */,
 				BDE30FBD2727A9120024C4B9 /* DatabaseService.swift in Sources */,
 				BDE30FA72727A85F0024C4B9 /* AppDelegate.swift in Sources */,
-				BDE30FC12727AFFD0024C4B9 /* ListOfUserController.swift in Sources */,
 				BDE30FBB2727A8D60024C4B9 /* PersonInfo.swift in Sources */,
 				BDE30FA92727A85F0024C4B9 /* SceneDelegate.swift in Sources */,
 			);
