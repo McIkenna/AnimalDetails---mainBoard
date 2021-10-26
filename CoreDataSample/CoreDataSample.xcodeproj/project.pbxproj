@@ -7,39 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDE30FA72727A85F0024C4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FA62727A85F0024C4B9 /* AppDelegate.swift */; };
-		BDE30FA92727A85F0024C4B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FA82727A85F0024C4B9 /* SceneDelegate.swift */; };
-		BDE30FAB2727A85F0024C4B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FAA2727A85F0024C4B9 /* ViewController.swift */; };
-		BDE30FAE2727A85F0024C4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FAC2727A85F0024C4B9 /* Main.storyboard */; };
-		BDE30FB02727A8610024C4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FAF2727A8610024C4B9 /* Assets.xcassets */; };
-		BDE30FB32727A8610024C4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FB12727A8610024C4B9 /* LaunchScreen.storyboard */; };
-		BDE30FBB2727A8D60024C4B9 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */; };
-		BDE30FBD2727A9120024C4B9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */; };
-		BDE30FC42728440D0024C4B9 /* PersistingData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FC22728440D0024C4B9 /* PersistingData.xcdatamodeld */; };
-		BDE30FC7272845090024C4B9 /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FC5272845090024C4B9 /* UserInfo+CoreDataClass.swift */; };
-		BDE30FC8272845090024C4B9 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FC6272845090024C4B9 /* UserInfo+CoreDataProperties.swift */; };
-		BDE30FCA272845EE0024C4B9 /* PersistenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FC9272845EE0024C4B9 /* PersistenceStorage.swift */; };
+		BDE30FD827285AFE0024C4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FD727285AFE0024C4B9 /* AppDelegate.swift */; };
+		BDE30FDA27285AFE0024C4B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FD927285AFE0024C4B9 /* SceneDelegate.swift */; };
+		BDE30FDC27285AFE0024C4B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FDB27285AFE0024C4B9 /* ViewController.swift */; };
+		BDE30FDF27285AFE0024C4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FDD27285AFE0024C4B9 /* Main.storyboard */; };
+		BDE30FE227285AFE0024C4B9 /* CoreDataSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FE027285AFE0024C4B9 /* CoreDataSample.xcdatamodeld */; };
+		BDE30FE427285AFF0024C4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FE327285AFF0024C4B9 /* Assets.xcassets */; };
+		BDE30FE727285AFF0024C4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE30FE527285AFF0024C4B9 /* LaunchScreen.storyboard */; };
+		BDE30FF327285E010024C4B9 /* PersisitenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE30FF227285E010024C4B9 /* PersisitenceStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BDE30FA32727A85F0024C4B9 /* PersistingData - Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PersistingData - Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDE30FA62727A85F0024C4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDE30FA82727A85F0024C4B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDE30FAA2727A85F0024C4B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BDE30FAD2727A85F0024C4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDE30FAF2727A8610024C4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BDE30FB22727A8610024C4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BDE30FB42727A8610024C4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
-		BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
-		BDE30FC32728440D0024C4B9 /* PersistingData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistingData.xcdatamodel; sourceTree = "<group>"; };
-		BDE30FC5272845090024C4B9 /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BDE30FC6272845090024C4B9 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BDE30FC9272845EE0024C4B9 /* PersistenceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStorage.swift; sourceTree = "<group>"; };
+		BDE30FD427285AFE0024C4B9 /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE30FD727285AFE0024C4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDE30FD927285AFE0024C4B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDE30FDB27285AFE0024C4B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDE30FDE27285AFE0024C4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDE30FE127285AFE0024C4B9 /* CoreDataSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSample.xcdatamodel; sourceTree = "<group>"; };
+		BDE30FE327285AFF0024C4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDE30FE627285AFF0024C4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDE30FE827285AFF0024C4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE30FF227285E010024C4B9 /* PersisitenceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisitenceStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BDE30FA02727A85F0024C4B9 /* Frameworks */ = {
+		BDE30FD127285AFE0024C4B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,78 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BDE30F9A2727A85F0024C4B9 = {
+		BDE30FCB27285AFE0024C4B9 = {
 			isa = PBXGroup;
 			children = (
-				BDE30FC9272845EE0024C4B9 /* PersistenceStorage.swift */,
-				BDE30FC5272845090024C4B9 /* UserInfo+CoreDataClass.swift */,
-				BDE30FC6272845090024C4B9 /* UserInfo+CoreDataProperties.swift */,
-				BDE30FA52727A85F0024C4B9 /* PersistingData - Assignment */,
-				BDE30FA42727A85F0024C4B9 /* Products */,
+				BDE30FF227285E010024C4B9 /* PersisitenceStorage.swift */,
+				BDE30FD627285AFE0024C4B9 /* CoreDataSample */,
+				BDE30FD527285AFE0024C4B9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BDE30FA42727A85F0024C4B9 /* Products */ = {
+		BDE30FD527285AFE0024C4B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDE30FA32727A85F0024C4B9 /* PersistingData - Assignment.app */,
+				BDE30FD427285AFE0024C4B9 /* CoreDataSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDE30FA52727A85F0024C4B9 /* PersistingData - Assignment */ = {
+		BDE30FD627285AFE0024C4B9 /* CoreDataSample */ = {
 			isa = PBXGroup;
 			children = (
-				BDE30FA62727A85F0024C4B9 /* AppDelegate.swift */,
-				BDE30FA82727A85F0024C4B9 /* SceneDelegate.swift */,
-				BDE30FAA2727A85F0024C4B9 /* ViewController.swift */,
-				BDE30FC22728440D0024C4B9 /* PersistingData.xcdatamodeld */,
-				BDE30FAC2727A85F0024C4B9 /* Main.storyboard */,
-				BDE30FAF2727A8610024C4B9 /* Assets.xcassets */,
-				BDE30FB12727A8610024C4B9 /* LaunchScreen.storyboard */,
-				BDE30FB42727A8610024C4B9 /* Info.plist */,
-				BDE30FBA2727A8D60024C4B9 /* PersonInfo.swift */,
-				BDE30FBC2727A9120024C4B9 /* DatabaseService.swift */,
+				BDE30FD727285AFE0024C4B9 /* AppDelegate.swift */,
+				BDE30FD927285AFE0024C4B9 /* SceneDelegate.swift */,
+				BDE30FDB27285AFE0024C4B9 /* ViewController.swift */,
+				BDE30FDD27285AFE0024C4B9 /* Main.storyboard */,
+				BDE30FE327285AFF0024C4B9 /* Assets.xcassets */,
+				BDE30FE527285AFF0024C4B9 /* LaunchScreen.storyboard */,
+				BDE30FE827285AFF0024C4B9 /* Info.plist */,
+				BDE30FE027285AFE0024C4B9 /* CoreDataSample.xcdatamodeld */,
 			);
-			path = "PersistingData - Assignment";
+			path = CoreDataSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDE30FA22727A85F0024C4B9 /* PersistingData - Assignment */ = {
+		BDE30FD327285AFE0024C4B9 /* CoreDataSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDE30FB72727A8610024C4B9 /* Build configuration list for PBXNativeTarget "PersistingData - Assignment" */;
+			buildConfigurationList = BDE30FEB27285AFF0024C4B9 /* Build configuration list for PBXNativeTarget "CoreDataSample" */;
 			buildPhases = (
-				BDE30F9F2727A85F0024C4B9 /* Sources */,
-				BDE30FA02727A85F0024C4B9 /* Frameworks */,
-				BDE30FA12727A85F0024C4B9 /* Resources */,
+				BDE30FD027285AFE0024C4B9 /* Sources */,
+				BDE30FD127285AFE0024C4B9 /* Frameworks */,
+				BDE30FD227285AFE0024C4B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "PersistingData - Assignment";
-			productName = "PersistingData - Assignment";
-			productReference = BDE30FA32727A85F0024C4B9 /* PersistingData - Assignment.app */;
+			name = CoreDataSample;
+			productName = CoreDataSample;
+			productReference = BDE30FD427285AFE0024C4B9 /* CoreDataSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BDE30F9B2727A85F0024C4B9 /* Project object */ = {
+		BDE30FCC27285AFE0024C4B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					BDE30FA22727A85F0024C4B9 = {
+					BDE30FD327285AFE0024C4B9 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = BDE30F9E2727A85F0024C4B9 /* Build configuration list for PBXProject "PersistingData - Assignment" */;
+			buildConfigurationList = BDE30FCF27285AFE0024C4B9 /* Build configuration list for PBXProject "CoreDataSample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,61 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = BDE30F9A2727A85F0024C4B9;
-			productRefGroup = BDE30FA42727A85F0024C4B9 /* Products */;
+			mainGroup = BDE30FCB27285AFE0024C4B9;
+			productRefGroup = BDE30FD527285AFE0024C4B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDE30FA22727A85F0024C4B9 /* PersistingData - Assignment */,
+				BDE30FD327285AFE0024C4B9 /* CoreDataSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BDE30FA12727A85F0024C4B9 /* Resources */ = {
+		BDE30FD227285AFE0024C4B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE30FB32727A8610024C4B9 /* LaunchScreen.storyboard in Resources */,
-				BDE30FB02727A8610024C4B9 /* Assets.xcassets in Resources */,
-				BDE30FAE2727A85F0024C4B9 /* Main.storyboard in Resources */,
+				BDE30FE727285AFF0024C4B9 /* LaunchScreen.storyboard in Resources */,
+				BDE30FE427285AFF0024C4B9 /* Assets.xcassets in Resources */,
+				BDE30FDF27285AFE0024C4B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BDE30F9F2727A85F0024C4B9 /* Sources */ = {
+		BDE30FD027285AFE0024C4B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE30FAB2727A85F0024C4B9 /* ViewController.swift in Sources */,
-				BDE30FBD2727A9120024C4B9 /* DatabaseService.swift in Sources */,
-				BDE30FA72727A85F0024C4B9 /* AppDelegate.swift in Sources */,
-				BDE30FC7272845090024C4B9 /* UserInfo+CoreDataClass.swift in Sources */,
-				BDE30FBB2727A8D60024C4B9 /* PersonInfo.swift in Sources */,
-				BDE30FA92727A85F0024C4B9 /* SceneDelegate.swift in Sources */,
-				BDE30FC8272845090024C4B9 /* UserInfo+CoreDataProperties.swift in Sources */,
-				BDE30FC42728440D0024C4B9 /* PersistingData.xcdatamodeld in Sources */,
-				BDE30FCA272845EE0024C4B9 /* PersistenceStorage.swift in Sources */,
+				BDE30FE227285AFE0024C4B9 /* CoreDataSample.xcdatamodeld in Sources */,
+				BDE30FF327285E010024C4B9 /* PersisitenceStorage.swift in Sources */,
+				BDE30FDC27285AFE0024C4B9 /* ViewController.swift in Sources */,
+				BDE30FD827285AFE0024C4B9 /* AppDelegate.swift in Sources */,
+				BDE30FDA27285AFE0024C4B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BDE30FAC2727A85F0024C4B9 /* Main.storyboard */ = {
+		BDE30FDD27285AFE0024C4B9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BDE30FAD2727A85F0024C4B9 /* Base */,
+				BDE30FDE27285AFE0024C4B9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BDE30FB12727A8610024C4B9 /* LaunchScreen.storyboard */ = {
+		BDE30FE527285AFF0024C4B9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BDE30FB22727A8610024C4B9 /* Base */,
+				BDE30FE627285AFF0024C4B9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BDE30FB52727A8610024C4B9 /* Debug */ = {
+		BDE30FE927285AFF0024C4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		BDE30FB62727A8610024C4B9 /* Release */ = {
+		BDE30FEA27285AFF0024C4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +290,7 @@
 			};
 			name = Release;
 		};
-		BDE30FB82727A8610024C4B9 /* Debug */ = {
+		BDE30FEC27285AFF0024C4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -315,7 +299,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2AL553RHN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "PersistingData - Assignment/Info.plist";
+				INFOPLIST_FILE = CoreDataSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ikenna.PersistingData---Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikenna.CoreDataSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +318,7 @@
 			};
 			name = Debug;
 		};
-		BDE30FB92727A8610024C4B9 /* Release */ = {
+		BDE30FED27285AFF0024C4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -343,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2AL553RHN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "PersistingData - Assignment/Info.plist";
+				INFOPLIST_FILE = CoreDataSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -354,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ikenna.PersistingData---Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikenna.CoreDataSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -365,20 +349,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDE30F9E2727A85F0024C4B9 /* Build configuration list for PBXProject "PersistingData - Assignment" */ = {
+		BDE30FCF27285AFE0024C4B9 /* Build configuration list for PBXProject "CoreDataSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDE30FB52727A8610024C4B9 /* Debug */,
-				BDE30FB62727A8610024C4B9 /* Release */,
+				BDE30FE927285AFF0024C4B9 /* Debug */,
+				BDE30FEA27285AFF0024C4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDE30FB72727A8610024C4B9 /* Build configuration list for PBXNativeTarget "PersistingData - Assignment" */ = {
+		BDE30FEB27285AFF0024C4B9 /* Build configuration list for PBXNativeTarget "CoreDataSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDE30FB82727A8610024C4B9 /* Debug */,
-				BDE30FB92727A8610024C4B9 /* Release */,
+				BDE30FEC27285AFF0024C4B9 /* Debug */,
+				BDE30FED27285AFF0024C4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -386,17 +370,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BDE30FC22728440D0024C4B9 /* PersistingData.xcdatamodeld */ = {
+		BDE30FE027285AFE0024C4B9 /* CoreDataSample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BDE30FC32728440D0024C4B9 /* PersistingData.xcdatamodel */,
+				BDE30FE127285AFE0024C4B9 /* CoreDataSample.xcdatamodel */,
 			);
-			currentVersion = BDE30FC32728440D0024C4B9 /* PersistingData.xcdatamodel */;
-			path = PersistingData.xcdatamodeld;
+			currentVersion = BDE30FE127285AFE0024C4B9 /* CoreDataSample.xcdatamodel */;
+			path = CoreDataSample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = BDE30F9B2727A85F0024C4B9 /* Project object */;
+	rootObject = BDE30FCC27285AFE0024C4B9 /* Project object */;
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var usernameField : UITextField!
     @IBOutlet weak var ageField : UITextField!
@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var button : UIButton!
     var dataBase: DatabaseService = DatabaseService()
     //var userInfo : [PersonInfo] = []
+    var idToDelete : Int = 0
     @IBOutlet weak var userTable : UITableView!
     
     var user : [PersonInfo] = []
@@ -24,8 +25,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
         userTable.register(UITableViewCell.self, forCellReuseIdentifier: "myTableCell")
         userTable.dataSource = self
+        userTable.delegate = self
     
         user = dataBase.read()
+        dataBase.deleteById(id: 5)
+        
     }
 
     
@@ -58,5 +62,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = "\(user[indexPath.row].id) : " + user[indexPath.row].username + " " + String(user[indexPath.row].age)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        idToDelete = indexPath.row
+    }
+    
 }
 

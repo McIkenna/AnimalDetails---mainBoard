@@ -97,5 +97,21 @@ class DatabaseService {
         return userInfo
     }
     
+    func deleteById(id:Int){
+        let deleteQuery = "DELETE FROM userProfile WHERE Id  ?;"
+        var deleteStatment : OpaquePointer? = nil
+        if sqlite3_prepare_v2(db, deleteQuery, -1, &deleteStatment, nil) == SQLITE_OK {
+            sqlite3_bind_int(deleteStatment, 1, Int32(id))
+            
+            if sqlite3_step(deleteStatment) == SQLITE_DONE {
+                print("Successfully deleted")
+            }else{
+                print("Could not delete")
+            }
+        }else{
+            print("Delete statement failed")
+        }
+        sqlite3_finalize(deleteStatment)
+    }
 }
 
